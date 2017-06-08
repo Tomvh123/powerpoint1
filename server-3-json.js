@@ -19,6 +19,6 @@ http.createServer(function (req, res) {
     });
        res.end(json);
 
-}).listen(3000);
+}).listen(process.env.PORT || 3000);
 
 console.log('De server luistert naar port 3000');
